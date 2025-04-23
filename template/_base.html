@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+<body>
+    
+    <div class="container-home">
+
+      
+   
+         <!-- # nav   -->
+         <div class="nav">
+            <ul class="menu">
+                <li><a href="/">صفحه اصلی</a></li>
+                <li>
+                    <a href="/courses/">دوره های آموزشی</a>
+                    <ul class="educational">
+                        <li><a href="/educational/" class="filter-choice">icdl</a></li>
+                        <li><a href="/educational/" class="filter-choice">python</a></li>
+                        <li><a href="/educational/" class="filter-choice">html-css</a></li>
+                        <li><a href="/educational/" class="filter-choice">فتوشاپ</a></li>
+                        <li><a href="/educational/" class="filter-choice">حسابداری</a></li>
+                        <li><a href="/educational/" class="filter-choice">ادمینی اینستاگرام</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">تقویم آموزشی</a>
+                    <ul class="educational">
+                        <li><a href="detail.html">دوره های تابستانی</a></li>
+                        <li><a href="detail.html">دوره های پاییزی</a></li>
+                        <li><a href="detail.html">دوره های زمستانی</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">سره مینو</a>
+                    <ul class="educational">
+                        <li><a href="detail.html">ارتباط با ما</a></li>
+                        <li><a href="detail.html">درباره ما</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index/login.html">ورود حساب کاربری</a></li>
+            </ul>
+        </div>
+         
+         {% block cover-box %}
+         <div class="cover-box"></div>
+         {% endblock cover-box %}
+            
+
+       <!-- # endnav   -->
+
+       <!--  body  -->
+         
+         {% block content %}
+            
+         {% endblock content %}
+            
+
+       <!-- end-body -->
+
+       <!-- footer -->
+
+       
+       {% block footer %}
+        
+       {% endblock footer %}
+        
+         
+        <!-- end footer -->
+
+    </div >
+
+</body>
+</html>
