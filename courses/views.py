@@ -5,7 +5,7 @@ from django.views import generic
 
 
 class IndexView (generic.TemplateView) :
-    template_name = "homeapp/index.html"
+    template_name = "homeapp/courses.html"
 
 
 
