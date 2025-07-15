@@ -1,96 +1,95 @@
-
-@import url('../font/irseri.ttf'); 
+@import url("../font/irseri.ttf");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   direction: rtl;
-  font-family: 'IRANSans', sans-serif;
+  font-family: "IRANSans", sans-serif;
   font-weight: 300;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .login-container {
-    background-color: #D3D3D3;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    text-align: center;
+  background-color: #d3d3d3;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
 }
 
 h2 {
-    margin-bottom: 20px;
-    color: #333;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
 }
 
 input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    font-size: 14px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 14px;
 }
 
 input::placeholder {
-    color: #aaa;
+  color: #aaa;
 }
 
 input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
 }
 
 button {
-    width: 100%;
-    padding: 12px;
-    background-color: #28a745; /* رنگ سبز */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745; /* رنگ سبز */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background-color: #218838; /* رنگ سبز تیره‌تر */
-    transform: translateY(-2px); /* انیمیشن جابجایی */
+  background-color: #218838; /* رنگ سبز تیره‌تر */
+  transform: translateY(-2px); /* انیمیشن جابجایی */
 }
 
 .password-recovery {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .password-recovery a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .password-recovery a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+  color: #0056b3;
+  text-decoration: underline;
 }

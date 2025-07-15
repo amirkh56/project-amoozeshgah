@@ -3,353 +3,190 @@
 <div class="container">
   <div class="container-Seasonal-courses">
     <div class="body-row-2">
-      <div class="box-item2">
-        <a href="detail.html">
-          <img src="../picture/images-1.jpg" alt="" class="banner-title" />
-        </a>
-        <h2 class="head-5">معرفی دوره</h2>
-        <div class="title-description">
-          <h4>نام دوره :</h4>
-          <h4>آموزش هفت گانه icdl</h4>
-        </div>
+      
+      {% for item in courses %}
 
-        <div class="Course">
-          <h3>تعداد جلسات دوره :</h3>
-          <h3>15 جلسه</h3>
-        </div>
-        <div class="Course">
-          <h3>شهریه دوره :</h3>
-          <h3>5/0000/000 تومان</h3>
-        </div>
+        <div class="box-item2">
+          <a href="/educational/">
+            <img src="{% static "picture/images-1.jpg" %}" alt="" class="banner-title" />
+          </a>
+          <h2 class="head-5">معرفی دوره</h2>
+          <div class="title-description">
+            <h4>نام دوره :</h4>
+            <h4>{{ item.name }}</h4>
+          </div>
 
-        <div class="teacher-icdl">
-          <h3>نام مدرس :</h3>
-          <h3>محدثه مصطفی لو</h3>
-        </div>
-      </div>
-      <div class="box-item2">
-        <a href="detail.html">
-          <img src="../picture/images-1.jpg" alt="" class="banner-title" />
-        </a>
-        <h2 class="head-5">معرفی دوره</h2>
-        <div class="title-description">
-          <h4>نام دوره :</h4>
-          <h4>آموزش هفت گانه icdl</h4>
-        </div>
+          <div class="Course">
+            <h3>تعداد جلسات دوره :</h3>
+            <h3>{{item.number_of_sessions}}</h3>
+          </div>
+          <div class="Course">
+            <h3>شهریه دوره :</h3>
+            <h3>{{item.price}} تومان</h3>
+          </div>
 
-        <div class="Course">
-          <h3>تعداد جلسات دوره :</h3>
-          <h3>15 جلسه</h3>
+          <div class="teacher-icdl">
+            <h3>نام مدرس :</h3>
+            <h3>{{item.teacher_name}}</h3>
+          </div>
         </div>
-        <div class="Course">
-          <h3>شهریه دوره :</h3>
-          <h3>5/0000/000 تومان</h3>
-        </div>
-
-        <div class="teacher-icdl">
-          <h3>نام مدرس :</h3>
-          <h3>محدثه مصطفی لو</h3>
-        </div>
-      </div>
-
-      <div class="box-item2">
-        <a href="detail.html">
-          <img src="../picture/images-1.jpg" alt="" class="banner-title" />
-        </a>
-        <h2 class="head-5">معرفی دوره</h2>
-        <div class="title-description">
-          <h4>نام دوره :</h4>
-          <h4>آموزش هفت گانه icdl</h4>
-        </div>
-
-        <div class="Course">
-          <h3>تعداد جلسات دوره :</h3>
-          <h3>15 جلسه</h3>
-        </div>
-        <div class="Course">
-          <h3>شهریه دوره :</h3>
-          <h3>5/0000/000 تومان</h3>
-        </div>
-
-        <div class="teacher-icdl">
-          <h3>نام مدرس :</h3>
-          <h3>محدثه مصطفی لو</h3>
-        </div>
-      </div>
-
-      <div class="box-item2">
-        <a href="detail.html">
-          <img src="../picture/images-1.jpg" alt="" class="banner-title" />
-        </a>
-        <h2 class="head-5">معرفی دوره</h2>
-        <div class="title-description">
-          <h4>نام دوره :</h4>
-          <h4>آموزش هفت گانه icdl</h4>
-        </div>
-
-        <div class="Course">
-          <h3>تعداد جلسات دوره :</h3>
-          <h3>15 جلسه</h3>
-        </div>
-        <div class="Course">
-          <h3>شهریه دوره :</h3>
-          <h3>5/0000/000 تومان</h3>
-        </div>
-
-        <div class="teacher-icdl">
-          <h3>نام مدرس :</h3>
-          <h3>محدثه مصطفی لو</h3>
-        </div>
-      </div>
-    </div>
-
-    <h1 class="h1">جدول زمان بندی کلاس ها</h1>
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>شماره</th>
-            <th>نام</th>
-            <th>ایمیل</th>
-            <th>شماره تلفن</th>
-            <th>وضعیت</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>زهرا احمدی</td>
-            <td>zahra@example.com</td>
-            <td>09123456789</td>
-            <td>فعال</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>رضا محمدی</td>
-            <td>reza@example.com</td>
-            <td>09357681234</td>
-            <td>غیرفعال</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>سارا حسینی</td>
-            <td>sara@example.com</td>
-            <td>09012345678</td>
-            <td>فعال</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>امیر کاظمی</td>
-            <td>amir@example.com</td>
-            <td>09981234567</td>
-            <td>منتظر</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>مریم دوست‌محمدی</td>
-            <td>maryam@example.com</td>
-            <td>09155667788</td>
-            <td>فعال</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>مریم دوست‌محمدی</td>
-            <td>maryam@example.com</td>
-            <td>09155667788</td>
-            <td>فعال</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="body-row-2">
-      <div class="box-item2">
-        <a href="">
-          <img src="../picture/images-1.jpg" alt="" class="banner-title" />
-        </a>
-        <h2 class="head-5">معرفی دوره</h2>
-        <div class="title-description">
-          <h4>نام دوره :</h4>
-          <h4>آموزش هفت گانه icdl</h4>
-        </div>
-
-        <div class="Course">
-          <h3>تعداد جلسات دوره :</h3>
-          <h3>15 جلسه</h3>
-        </div>
-        <div class="Course">
-          <h3>شهریه دوره :</h3>
-          <h3>5/0000/000 تومان</h3>
-        </div>
-
-        <div class="teacher-icdl">
-          <h3>نام مدرس :</h3>
-          <h3>محدثه مصطفی لو</h3>
-        </div>
-      </div>
-      <div class="box-item2">
-        <a href="">
-          <img src="../picture/images-1.jpg" alt="" class="banner-title" />
-        </a>
-        <h2 class="head-5">معرفی دوره</h2>
-        <div class="title-description">
-          <h4>نام دوره :</h4>
-          <h4>آموزش هفت گانه icdl</h4>
-        </div>
-
-        <div class="Course">
-          <h3>تعداد جلسات دوره :</h3>
-          <h3>15 جلسه</h3>
-        </div>
-        <div class="Course">
-          <h3>شهریه دوره :</h3>
-          <h3>5/0000/000 تومان</h3>
-        </div>
-
-        <div class="teacher-icdl">
-          <h3>نام مدرس :</h3>
-          <h3>محدثه مصطفی لو</h3>
-        </div>
-      </div>
-
-      <div class="box-item2">
-        <a href="">
-          <img src="../picture/images-1.jpg" alt="" class="banner-title" />
-        </a>
-        <h2 class="head-5">معرفی دوره</h2>
-        <div class="title-description">
-          <h4>نام دوره :</h4>
-          <h4>آموزش هفت گانه icdl</h4>
-        </div>
-
-        <div class="Course">
-          <h3>تعداد جلسات دوره :</h3>
-          <h3>15 جلسه</h3>
-        </div>
-        <div class="Course">
-          <h3>شهریه دوره :</h3>
-          <h3>5/0000/000 تومان</h3>
-        </div>
-
-        <div class="teacher-icdl">
-          <h3>نام مدرس :</h3>
-          <h3>محدثه مصطفی لو</h3>
-        </div>
-      </div>
-
-      <div class="box-item2">
-        <a href="">
-          <img src="../picture/images-1.jpg" alt="" class="banner-title" />
-        </a>
-        <h2 class="head-5">معرفی دوره</h2>
-        <div class="title-description">
-          <h4>نام دوره :</h4>
-          <h4>آموزش هفت گانه icdl</h4>
-        </div>
-
-        <div class="Course">
-          <h3>تعداد جلسات دوره :</h3>
-          <h3>15 جلسه</h3>
-        </div>
-        <div class="Course">
-          <h3>شهریه دوره :</h3>
-          <h3>5/0000/000 تومان</h3>
-        </div>
-        <div class="teacher-icdl">
-          <h3>نام مدرس :</h3>
-          <h3>محدثه مصطفی لو</h3>
-        </div>
-      </div>
-    </div>
-
-    <br /><br />
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>شماره</th>
-            <th>نام</th>
-            <th>ایمیل</th>
-            <th>شماره تلفن</th>
-            <th>وضعیت</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>زهرا احمدی</td>
-            <td>zahra@example.com</td>
-            <td>09123456789</td>
-            <td>فعال</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>رضا محمدی</td>
-            <td>reza@example.com</td>
-            <td>09357681234</td>
-            <td>غیرفعال</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>سارا حسینی</td>
-            <td>sara@example.com</td>
-            <td>09012345678</td>
-            <td>فعال</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>امیر کاظمی</td>
-            <td>amir@example.com</td>
-            <td>09981234567</td>
-            <td>منتظر</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>مریم دوست‌محمدی</td>
-            <td>maryam@example.com</td>
-            <td>09155667788</td>
-            <td>فعال</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>مریم دوست‌محمدی</td>
-            <td>maryam@example.com</td>
-            <td>09155667788</td>
-            <td>فعال</td>
-          </tr>
-        </tbody>
-      </table>
+      {% endfor %}
     </div>
   </div>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section about">
-        <h2>درباره ما</h2>
-        <p>
-          ما یک آموزشگاه کامپیوتری هستیم که به آموزش مهارت‌های مختلف در زمینه
-          فناوری اطلاعات و کامپیوتر می‌پردازیم.
-        </p>
-      </div>
-      <div class="footer-section links">
-        <h2>لینک‌های مفید</h2>
-        <ul>
-          <li><a href="home.html">صفحه اصلی</a></li>
-          <li><a href="index.html">دوره‌ها</a></li>
-          <li><a href="about.html">تماس با ما</a></li>
-          <li><a href="about.html">درباره ما</a></li>
-        </ul>
-      </div>
-      <div class="footer-section contact">
-        <h2>تماس با ما</h2>
-        <p>تلفن: ۰۱۲۳۴۵۶۷۸۹</p>
-        <p>ایمیل: info@example.com</p>
-      </div>
+  <h1 class="h1">جدول زمان بندی کلاس ها</h1>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>شماره</th>
+          <th>نام</th>
+          <th>ایمیل</th>
+          <th>شماره تلفن</th>
+          <th>وضعیت</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>زهرا احمدی</td>
+          <td>zahra@example.com</td>
+          <td>09123456789</td>
+          <td>فعال</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>رضا محمدی</td>
+          <td>reza@example.com</td>
+          <td>09357681234</td>
+          <td>غیرفعال</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>سارا حسینی</td>
+          <td>sara@example.com</td>
+          <td>09012345678</td>
+          <td>فعال</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>امیر کاظمی</td>
+          <td>amir@example.com</td>
+          <td>09981234567</td>
+          <td>منتظر</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>مریم دوست‌محمدی</td>
+          <td>maryam@example.com</td>
+          <td>09155667788</td>
+          <td>فعال</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>مریم دوست‌محمدی</td>
+          <td>maryam@example.com</td>
+          <td>09155667788</td>
+          <td>فعال</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="body-row-2">
+    {% for item in courses %}
+
+        <div class="box-item2">
+          <a href="/educational/">
+            <img src="{% static "picture/images-1.jpg" %}" alt="" class="banner-title" />
+          </a>
+          <h2 class="head-5">معرفی دوره</h2>
+          <div class="title-description">
+            <h4>نام دوره :</h4>
+            <h4>{{ item.name }}</h4>
+          </div>
+
+          <div class="Course">
+            <h3>تعداد جلسات دوره :</h3>
+            <h3>{{item.number_of_sessions}}</h3>
+          </div>
+          <div class="Course">
+            <h3>شهریه دوره :</h3>
+            <h3>{{item.price}} تومان</h3>
+          </div>
+
+          <div class="teacher-icdl">
+            <h3>نام مدرس :</h3>
+            <h3>{{item.teacher_name}}</h3>
+          </div>
+        </div>
+      {% endfor %}
+    
+
+    
+
+    
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2023 آموزشگاه کامپیوتری. تمامی حقوق محفوظ است.</p>
-    </div>
-  </footer>
+  </div>
+
+  <br /><br />
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>شماره</th>
+          <th>نام</th>
+          <th>ایمیل</th>
+          <th>شماره تلفن</th>
+          <th>وضعیت</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>زهرا احمدی</td>
+          <td>zahra@example.com</td>
+          <td>09123456789</td>
+          <td>فعال</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>رضا محمدی</td>
+          <td>reza@example.com</td>
+          <td>09357681234</td>
+          <td>غیرفعال</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>سارا حسینی</td>
+          <td>sara@example.com</td>
+          <td>09012345678</td>
+          <td>فعال</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>امیر کاظمی</td>
+          <td>amir@example.com</td>
+          <td>09981234567</td>
+          <td>منتظر</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>مریم دوست‌محمدی</td>
+          <td>maryam@example.com</td>
+          <td>09155667788</td>
+          <td>فعال</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>مریم دوست‌محمدی</td>
+          <td>maryam@example.com</td>
+          <td>09155667788</td>
+          <td>فعال</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
 {% endblock content %}

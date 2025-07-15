@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Vazir", "Nunito-Medium";
-  src: local("Vazir") url("../fonts/Vazir.ttf") format("truetype"),
-    url("../fonts/Nunito-Medium.ttf") format("truetype");
+  src: local("Vazir") url("../font/TTF/Vazir.ttf") format("truetype"),
+    url("../font/Nunito-Medium.ttf") format("truetype");
 }
 
 body {
@@ -164,7 +164,7 @@ ul.nav-menu li a {
 
 ul.nav-menu li a:hover,
 ul.nav-menu li a:focus {
-  background: url(../picture/slider-cover.jpg);
+  /* background: url(/picture/slider-cover.jpg); */
   color: #f1faee;
 }
 

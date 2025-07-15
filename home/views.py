@@ -9,3 +9,7 @@ class HomeView (generic.ListView) :
     model = LearningCourses
     template_name = "homeapp/home.html"
     context_object_name = 'book'
+
+
+class AboutView (generic.TemplateView) :
+    template_name = 'homeapp/about.html'
