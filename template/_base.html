@@ -1,79 +1,239 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
-</head>
-<body>
-    
-    <div class="container-home">
+    <link rel="stylesheet" href="{% static "css/khoshgeli.css" %}">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="container-nav">
+          <div
+            class="hamburger"
+            aria-label="بازکردن منو"
+            aria-expanded="false"
+            role="button"
+            tabindex="0"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
-      
-   
-         <!-- # nav   -->
-         <div class="nav">
-            <ul class="menu">
-                <li><a href="/">صفحه اصلی</a></li>
-                <li>
-                    <a href="/courses/">دوره های آموزشی</a>
-                    <ul class="educational">
-                        <li><a href="/educational/" class="filter-choice">icdl</a></li>
-                        <li><a href="/educational/" class="filter-choice">python</a></li>
-                        <li><a href="/educational/" class="filter-choice">html-css</a></li>
-                        <li><a href="/educational/" class="filter-choice">فتوشاپ</a></li>
-                        <li><a href="/educational/" class="filter-choice">حسابداری</a></li>
-                        <li><a href="/educational/" class="filter-choice">ادمینی اینستاگرام</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">تقویم آموزشی</a>
-                    <ul class="educational">
-                        <li><a href="detail.html">دوره های تابستانی</a></li>
-                        <li><a href="detail.html">دوره های پاییزی</a></li>
-                        <li><a href="detail.html">دوره های زمستانی</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">سره مینو</a>
-                    <ul class="educational">
-                        <li><a href="detail.html">ارتباط با ما</a></li>
-                        <li><a href="detail.html">درباره ما</a></li>
-                    </ul>
-                </li>
-                <li><a href="../index/login.html">ورود حساب کاربری</a></li>
+          <nav>
+            <ul class="nav-menu" role="menubar">
+              <li role="none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  class="home-icone"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                  />
+                </svg>
+                <a href="/" role="menuitem" tabindex="0">خانه</a>
+              </li>
+              <li role="none" class="has-dropdown">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  class="home-icone"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                  />
+                </svg>
+                <a
+                  href="/courses/"
+                  role="menuitem"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  tabindex="0"
+                  >دوره ها</a
+                >
+                <ul class="dropdown" role="menu">
+                  <li role="none">
+                    <a href="/courses/" role="menuitem" tabindex="-1"
+                      >همه دوره ها
+                    </a>
+                  </li>
+                  <li role="none">
+                    <a href="/educational/" role="menuitem" tabindex="-1">icdl</a>
+                  </li>
+                  <li role="none">
+                    <a href="/educational/" role="menuitem" tabindex="-1"
+                      >python</a
+                    >
+                  </li>
+                  <li role="none">
+                    <a href="/educational/" role="menuitem" tabindex="-1"
+                      >html-css</a
+                    >
+                  </li>
+                  <li role="none">
+                    <a href="/educational/" role="menuitem" tabindex="-1"
+                      >c-sharp</a
+                    >
+                  </li>
+                  <li role="none">
+                    <a href="/educational/" role="menuitem" tabindex="-1"
+                      >admin-instagram</a
+                    >
+                  </li>
+                  <li role="none">
+                    <a href="/educational/" role="menuitem" tabindex="-1"
+                      >حسابداری</a
+                    >
+                  </li>
+                  <li role="none">
+                    <a href="/educational/" role="menuitem" tabindex="-1"
+                      >فتوشاپ</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li role="none" class="has-dropdown">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  class="home-icone"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                  />
+                </svg>
+                <a
+                  href="#"
+                  role="menuitem"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  tabindex="0"
+                  >تقویم دوره ها</a
+                >
+                <ul class="dropdown" role="menu">
+                  <li role="none">
+                    <a
+                      href="/learningcalender/"
+                      role="menuitem"
+                      tabindex="-1"
+                      >بهاری</a
+                    >
+                  </li>
+                  <li role="none">
+                    <a
+                      href="/learningcalender/"
+                      role="menuitem"
+                      tabindex="-1"
+                      >دوره تابستانی</a
+                    >
+                  </li>
+                  <li role="none">
+                    <a
+                      href="/learningcalender/"
+                      role="menuitem"
+                      tabindex="-1"
+                      >دوره پاییزی
+                    </a>
+                  </li>
+                  <li role="none">
+                    <a
+                      href="/learningcalender/"
+                      role="menuitem"
+                      tabindex="-1"
+                      >زمستانی</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li role="none" class="has-dropdown">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="home-icone"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                  />
+                </svg>
+                <a
+                  href="#"
+                  role="menuitem"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  tabindex="0"
+                  >سره مینو</a
+                >
+                <ul class="dropdown" role="menu">
+                  <li role="none">
+                    <a href="#" role="menuitem" tabindex="-1">تماس با ما</a>
+                  </li>
+                  <li role="none">
+                    <a href="#" role="menuitem" tabindex="-1">درباره ما </a>
+                  </li>
+                </ul>
+              </li>
             </ul>
+          </nav>
+          <div class="logo" tabindex="0">لوگو سایت</div>
         </div>
-         
-         {% block cover-box %}
-         <div class="cover-box"></div>
-         {% endblock cover-box %}
-            
+      </header>
 
-       <!-- # endnav   -->
+      {% block content %}{% endblock content %}
 
-       <!--  body  -->
-         
-         {% block content %}
-            
-         {% endblock content %}
-            
-
-       <!-- end-body -->
-
-       <!-- footer -->
-
-       
-       {% block footer %}
-        
-       {% endblock footer %}
-        
-         
-        <!-- end footer -->
-
-    </div >
-
-</body>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>درباره ما</h2>
+            <p>
+              ما یک آموزشگاه کامپیوتری هستیم که به آموزش مهارت‌های مختلف در
+              زمینه فناوری اطلاعات و کامپیوتر می‌پردازیم.
+            </p>
+          </div>
+          <div class="footer-section links">
+            <h2>لینک‌های مفید</h2>
+            <ul>
+              <li><a href="/">صفحه اصلی</a></li>
+              <li><a href="/courses/">دوره‌ها</a></li>
+              <li><a href="contact.html">تماس با ما</a></li>
+              <li><a href="about.html">درباره ما</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>تماس با ما</h2>
+            <p>تلفن: ۰۱۲۳۴۵۶۷۸۹</p>
+            <p>ایمیل: info@example.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 آموزشگاه کامپیوتری. تمامی حقوق محفوظ است.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="{% static "script/test.js" %}"></script>
+  </body>
 </html>

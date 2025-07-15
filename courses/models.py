@@ -18,6 +18,8 @@ class LearningCourses (models.Model):
     number_of_sessions = models.IntegerField(verbose_name="تعداد جلسات")
     price = models.IntegerField(verbose_name="شهریه")
     group = models.CharField(choices=COURSE_GROUP, max_length=2, verbose_name="دسته",)
+    is_active = models.BooleanField(default=True, verbose_name="وضعیت دوره")
+    image = models.ImageField(upload_to='courses/images', verbose_name="تصویر دوره", null=True, blank=True)
 
     def  __str__(self):
         return self.name
@@ -31,4 +33,6 @@ class LearningWorkshops (models.Model):
     teacher_licence = models.CharField(max_length=30, verbose_name="مدرک مدرس")
     people = models.CharField(max_length=10, verbose_name="مخاطبین")
     workshop_price = models.IntegerField(verbose_name="شهریه")
+    is_active = models.BooleanField(default=True, verbose_name="وضعیت دوره")
+    image = models.ImageField(upload_to='courses/images', verbose_name="تصویر دوره", null=True, blank=True)
         
