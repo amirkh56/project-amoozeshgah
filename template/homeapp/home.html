@@ -1,146 +1,239 @@
-{% extends "_base.html" %} {% load static %} 
+{% extends "_base.html" %} {% load static %} {% block content %} 
+<link rel="stylesheet" href="{% static "css/ghashangi.css" %}">
+<div class="home-container">
+  <div class="cover-box"></div>
 
-
-{% block cover-box %}
-<div class="cover-box"></div>
-
-{% endblock cover-box %}
-    
-
-
-{% block content %}
-    
-<div class="body-row">
-
+  <!--  body  -->
+  <div class="body-row">
     <div class="body-row-1">
-
-        <div>
-           <h1 class="head">آموزشگاه سره مینو</h1>
-           <h3>برای آن که شما مسیر موفقیت را سریع تر بپیمایید و صفر تا صد کامپیوتر را بدون هیچ پیش نیازی یاد بگیرید و وارد بازار کار شده و کسب درآمد کنید انواع فیلم آموزش کامپیوتر به زبان ساده را در حوزه های مختلف برای شما عزیزان فراهم کرده ایم. در اموزش کامل کامپیوتر شما برای ورود به حوزه های مختلف آماده میشوید و با مشاهده فیلم آموزش کامپیوتر برای ورود به بازار کار آماده میشوید. .
-
-           </h3>
+      <h1 class="head-1">درباره آموزشگاه سره مینو</h1>
+      <div class="description-row-1">
+        <div class="box-item-1">
+          <h3 class="head-box">
+            برای آن که شما مسیر موفقیت را سریع تر بپیمایید و صفر تا صد کامپیوتر
+            را بدون هیچ پیش نیازی یاد بگیرید و وارد بازار کار شده و کسب درآمد
+            کنید انواع فیلم آموزش کامپیوتر به زبان ساده را در حوزه های مختلف
+            برای شما عزیزان فراهم کرده ایم. در اموزش کامل کامپیوتر شما برای ورود
+            به حوزه های مختلف آماده میشوید و با مشاهده فیلم آموزش کامپیوتر برای
+            ورود به بازار کار آماده میشوید. .
+          </h3>
         </div>
-        
-        <div>
-            <img src="{% static "picture/picture-5.jpg" %}" alt="" class="image-1"> 
-        </div>
-        
 
-        <p class="p2">مانیتور، به عنوان ابزاری که قرار است از طریق نرم افزار فتوشاپ ویرایش تصاویر عکاس و یا طراح بر روی انجام شود بسیار مهم است. در واقع، نمایش درست و دقیق تصاویر و رنگ‌ها در فتوشاپ، به شدت به دقت و کیفیت مانیتور بستگی دارد و اگر مانیتور مناسبی نداشته باشید، ممکن است در کار با فتوشاپ مشکلاتی رو به رو شوید. از طرفی مدیریت رنگ در عکاسی به معنای تضمین صحت رنگ‌ها و توانایی تطبیق رنگ‌ها بین دو دستگاه مختلف است. در این حالت اگر از مانیتور مناسبی استفاده نکنید، زمان خود را تلف کرده اید.
+        <div class="box-item-2"></div>
+      </div>
 
-            به عنوان مثال، اگر مانیتور شما دارای رزولوشن پایین باشد، جزئیاتی که در تصاویر وجود دارد به شدت کاسته می شود. در نتیجه شما نمی‌توانید به دقت آن‌ها را مشاهده کنید. همچنین، اگر مانیتور شما دارای دقت رنگ پایین باشد، رنگ‌های تصاویر شما به نحوی که باید نمایش داده نمی‌شوند و قطعا باعث نارضایتی شما و مشتری شما خواهد بود. با ما همراه باشید تا مروری بر موضوع انتخاب مانیتور مناسب برای عکاسی و فتوشاپ داشته باشیم.</p>
-         
+      <h1 class="head-2">پر طرفدارترین دوره ها</h1>
+      <h1>دوره های محبوب یادگیری</h1>
 
+      <div class="box-image-1">
+        <img src="{% static "picture/ICdl-pro-in.jpg" %}" alt="" class="image-1"
+        /> <img src="{% static "picture/ICdl-pro-in.jpg" %}" alt=""
+        class="image-1" />
+        <img src="{% static "picture/ICdl-pro-in.jpg" %}" alt="" class="image-1" />
+        <img src="{% static "picture/ICdl-pro-in.jpg" %}" alt="" class="image-1" />
+      </div>
+
+      <div class="baner">
+        <div class="baner-item"></div>
+        <div class="baner-item"></div>
+      </div>
+
+      <h1 class="head-3"></h1>
+      <p class="p4">
+        دوره های آموزشی به صورت کاملا عملی و طبق استاندارد فنی حرفه ای،توسط
+        اساتید مجرب برگزار میشود
+      </p>
     </div>
 
     <div class="body-row-2">
+      <div class="box-item2">
+        <a href="">
+          <img src="{% static "picture/images-1.jpg" %}" alt="" class="banner-title" />
+        </a>
+        <h2 class="head-5">معرفی دوره</h2>
+        <div class="title-description">
+          <h4>نام دوره :</h4>
+          <h4>آموزش هفت گانه icdl</h4>
+        </div>
 
-        
+        <div class="Course">
+          <h3>تعداد جلسات دوره :</h3>
+          <h3>15 جلسه</h3>
+        </div>
+        <div class="Course">
+          <h3>شهریه دوره :</h3>
+          <h3>5/0000/000 تومان</h3>
+        </div>
 
-       <div class="image-3"> 
-          <img src="{% static "picture/picture-3.jpg" %}" alt="" class="picture-3">
+        <div class="teacher-icdl">
+          <h3>نام مدرس :</h3>
+          <h3>محدثه مصطفی لو</h3>
+        </div>
       </div>
-       <div class="image-3">
-          <img src="{% static "picture/picture-3.jpg" %}" alt="" class="picture-3">
+      <div class="box-item2">
+        <a href="">
+          <img src="{% static "picture/images-1.jpg" %}" alt="" class="banner-title" />
+        </a>
+        <h2 class="head-5">معرفی دوره</h2>
+        <div class="title-description">
+          <h4>نام دوره :</h4>
+          <h4>آموزش هفت گانه icdl</h4>
+        </div>
+
+        <div class="Course">
+          <h3>تعداد جلسات دوره :</h3>
+          <h3>15 جلسه</h3>
+        </div>
+        <div class="Course">
+          <h3>شهریه دوره :</h3>
+          <h3>5/0000/000 تومان</h3>
+        </div>
+
+        <div class="teacher-icdl">
+          <h3>نام مدرس :</h3>
+          <h3>محدثه مصطفی لو</h3>
+        </div>
       </div>
-       <div class="image-3">
-          <img src="{% static "picture/picture-3.jpg" %}" alt="" class="picture-3">
+
+      <div class="box-item2">
+        <a href="">
+          <img src="{% static "picture/images-1.jpg" %}" alt="" class="banner-title" />
+        </a>
+        <h2 class="head-5">معرفی دوره</h2>
+        <div class="title-description">
+          <h4>نام دوره :</h4>
+          <h4>آموزش هفت گانه icdl</h4>
+        </div>
+
+        <div class="Course">
+          <h3>تعداد جلسات دوره :</h3>
+          <h3>15 جلسه</h3>
+        </div>
+        <div class="Course">
+          <h3>شهریه دوره :</h3>
+          <h3>5/0000/000 تومان</h3>
+        </div>
+
+        <div class="teacher-icdl">
+          <h3>نام مدرس :</h3>
+          <h3>محدثه مصطفی لو</h3>
+        </div>
       </div>
-       <div class="image-3">
-          <img src="{% static "picture/picture-3.jpg" %}" alt="" class="picture-3">
+
+      <div class="box-item2">
+        <a href="">
+          <img src="{% static "picture/images-1.jpg" %}" alt="" class="banner-title" />
+        </a>
+        <h2 class="head-5">معرفی دوره</h2>
+        <div class="title-description">
+          <h4>نام دوره :</h4>
+          <h4>آموزش هفت گانه icdl</h4>
+        </div>
+
+        <div class="Course">
+          <h3>تعداد جلسات دوره :</h3>
+          <h3>15 جلسه</h3>
+        </div>
+        <div class="Course">
+          <h3>شهریه دوره :</h3>
+          <h3>5/0000/000 تومان</h3>
+        </div>
+
+        <div class="teacher-icdl">
+          <h3>نام مدرس :</h3>
+          <h3>محدثه مصطفی لو</h3>
+        </div>
       </div>
     </div>
 
-    <div class="box-body2"> 
-        <div class="body-h2"> 
-       
-       </div>  
-       <p class="p2">مانیتور، به عنوان ابزاری که قرار است از طریق نرم افزار فتوشاپ ویرایش تصاویر عکاس و یا طراح بر روی انجام شود بسیار مهم است. در واقع، نمایش درست و دقیق تصاویر و رنگ‌ها در فتوشاپ، به شدت به دقت و کیفیت مانیتور بستگی دارد و اگر مانیتور مناسبی نداشته باشید، ممکن است در کار با فتوشاپ مشکلاتی رو به رو شوید. از طرفی مدیریت رنگ در عکاسی به معنای تضمین صحت رنگ‌ها و توانایی تطبیق رنگ‌ها بین دو دستگاه مختلف است. در این حالت اگر از مانیتور مناسبی استفاده نکنید، زمان خود را تلف کرده اید.
+    <div class="show-all">
+      <h3 class="show-head"><a href="index.html">نمایش همه </a></h3>
+      <a href=""
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="{1.5}"
+          stroke="currentColor"
+          class="show-icon"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18"
+          />
+        </svg>
+      </a>
+    </div>
+    <p class="p3">
+      فتوشاپ و مدیریت رنگ در عکاسی فتوشاپ یکی از قدرتمندترین نرم افزارهای ویرایش
+      تصویر است که برای عکاسان، طراحان گرافیک، هنرمندان و کاربران مختلفی که به
+      ویرایش تصاویر علاقه‌مند هستند، بسیار مفید است. اما برای به درستی کار کردن
+      با فتوشاپ در عکاسی، باید با مدیریت رنگ در عکاسی آشنا باشید و از این ویژگی
+      در فتوشاپ به درستی استفاده کنید. در فتوشاپ، برای مدیریت رنگ در عکاسی، می
+      توانید از گزینه های بسیاری استفاده کنید. این ویژگی‌ها به شما امکان می‌دهند
+      تا رنگ‌های تصویر را به دلخواه خود تنظیم کنید و به راحتی تطبیق رنگ‌ها بین
+      دو دستگاه مختلف را انجام دهید. به طور کلی، مدیریت رنگ در عکاسی و استفاده
+      از ویژگی‌های مدیریت رنگ در فتوشاپ، بسیار مهم است و به شما امکان می‌دهد تا
+      تصاویر با رنگ‌های دقیق‌تر و واقعی‌تر ایجاد کنید.
+    </p>
 
-          به عنوان مثال، اگر مانیتور شما دارای رزولوشن پایین باشد، جزئیاتی که در تصاویر وجود دارد به شدت کاسته می شود. در نتیجه شما نمی‌توانید به دقت آن‌ها را مشاهده کنید. همچنین، اگر مانیتور شما دارای دقت رنگ پایین باشد، رنگ‌های تصاویر شما به نحوی که باید نمایش داده نمی‌شوند و قطعا باعث نارضایتی شما و مشتری شما خواهد بود. با ما همراه باشید تا مروری بر موضوع انتخاب مانیتور مناسب برای عکاسی و فتوشاپ داشته باشیم.</p>
-       
-        </div>
+    <h1 class="head-1">امتیازات شرکت در دوره های سره مینو</h1>
+    <div class="box-score">
+      <div class="score">
+        <span class="p1-score-item"> Lorem ipsum dolor sit amet.</span>
+        <span class="p2-score-item"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facere
+          veniam ducimus cumque esse nobis quia minus asperiores reprehenderit
+          tenetur?
+        </span>
+      </div>
 
+      <div class="score">
+        <span class="p1-score-item"> Lorem ipsum dolor sit amet.</span>
+        <span class="p2-score-item"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facere
+          veniam ducimus cumque esse nobis quia minus asperiores reprehenderit
+          tenetur?
+        </span>
+      </div>
+      <div class="score">
+        <span class="p1-score-item"> Lorem ipsum dolor sit amet.</span>
+        <span class="p2-score-item"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facere
+          veniam ducimus cumque esse nobis quia minus asperiores reprehenderit
+          tenetur?
+        </span>
+      </div>
 
- </div>
- <div class="body-row-5">
+      <div class="score">
+        <span class="p1-score-item"> Lorem ipsum dolor sit amet.</span>
+        <span class="p2-score-item"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facere
+          veniam ducimus cumque esse nobis quia minus asperiores reprehenderit
+          tenetur?
+        </span>
+      </div>
 
-        <div class="image-5">
-           <img src="{% static "picture/picture-1.jpg" %}" alt="error" class="picture-5">
-       </div>
-        <div class="image-5">
-           <img src="{% static "picture/picture-1.jpg" %}" alt="error" class="picture-5">
-       </div>
+      <div class="score">
+        <span class="p1-score-item"> Lorem ipsum dolor sit amet.</span>
+        <span class="p2-score-item"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facere
+          veniam ducimus cumque esse nobis quia minus asperiores reprehenderit
+          tenetur?
+        </span>
+      </div>
 
- </div>
- <div class="body-row-5">
+      <div class="score">
+        <span class="p1-score-item"> Lorem ipsum dolor sit amet.</span>
+        <span class="p2-score-item"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facere
+          veniam ducimus cumque esse nobis quia minus asperiores reprehenderit
+          tenetur?
+        </span>
+      </div>
+    </div>
 
-        <div class="image-5">
-           <img src="{% static "picture/picture-1.jpg" %}" alt="error" class="picture-5">
-       </div>
-        <div class="image-5">
-           <img src="{% static "picture/picture-1.jpg" %}" alt="error" class="picture-5">
-       </div>
-
- </div>
-
-
- <p class="p3">فتوشاپ و مدیریت رنگ در عکاسی
-    فتوشاپ یکی از قدرتمندترین نرم افزارهای ویرایش تصویر است که برای عکاسان، طراحان گرافیک، هنرمندان و کاربران مختلفی که به ویرایش تصاویر علاقه‌مند هستند، بسیار مفید است. اما برای به درستی کار کردن با فتوشاپ در عکاسی، باید با مدیریت رنگ در عکاسی آشنا باشید و از این ویژگی در فتوشاپ به درستی استفاده کنید. در فتوشاپ، برای مدیریت رنگ در عکاسی، می توانید از گزینه های بسیاری استفاده کنید. این ویژگی‌ها به شما امکان می‌دهند تا رنگ‌های تصویر را به دلخواه خود تنظیم کنید و به راحتی تطبیق رنگ‌ها بین دو دستگاه مختلف را انجام دهید. به طور کلی، مدیریت رنگ در عکاسی و استفاده از ویژگی‌های مدیریت رنگ در فتوشاپ، بسیار مهم است و به شما امکان می‌دهد تا تصاویر با رنگ‌های دقیق‌تر و واقعی‌تر ایجاد کنید.</p>   
-
-
-    <div class="body-row-6">
-        <div class="image-3">
-           <img src="{% static "picture/sumup-Aqc7znjxROM-unsplash.jpg" %}" alt="" class="picture-3">
-       </div>
-        <div class="image-3">
-           <img src="{% static "picture/picture-5.jpg" %}" alt="" class="picture-3">
-       </div>
-        <div class="image-3">
-           <img src="{% static "picture/sumup-Aqc7znjxROM-unsplash.jpg" %}" alt="" class="picture-3">
-       </div>
-        <div class="image-3">
-           <img src="{% static "picture/picture-5.jpg" %}" alt="" class="picture-3">
-       </div>
-     
+    {% endblock content %}
   </div>
-
-{% endblock content %}
-    
-
-
-
-{% block footer %}
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-section about">
-            <h2>درباره ما</h2>
-            <p>ما یک آموزشگاه کامپیوتری هستیم که به آموزش مهارت‌های مختلف در زمینه فناوری اطلاعات و کامپیوتر می‌پردازیم.</p>
-        </div>
-        <div class="footer-section links">
-            <h2>لینک‌های مفید</h2>
-            <ul>
-                <li><a href="home.html">صفحه اصلی</a></li>
-                <li><a href="index.html">دوره‌ها</a></li>
-                <li><a href="contact.html">تماس با ما</a></li>
-                <li><a href="about.html">درباره ما</a></li>
-            </ul>
-        </div>
-        <div class="footer-section contact">
-            <h2>تماس با ما</h2>
-            <p>تلفن: ۰۱۲۳۴۵۶۷۸۹</p>
-            <p>ایمیل: info@example.com</p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2023 آموزشگاه کامپیوتری. تمامی حقوق محفوظ است.</p>
-    </div>
-</footer>
-
-<script src="../script/home.js"></script>
-    
-   <!-- end footer -->
-
-</div >
-{% endblock footer %}
-    
+</div>
